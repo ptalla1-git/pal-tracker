@@ -43,8 +43,8 @@ jobs:
         cf target -o "$CF_ORG" -s "$CF_SPACE"
         cf push -p ./pal-tracker/pal-tracker.jar
       env:
-        CF_API_URL: ${{ secrets.CF_API_URL }}
-        CF_ORG: ${{ secrets.CF_ORG }}
-        CF_SPACE: ${{ secrets.CF_SPACE }}
-        CF_USERNAME: ${{ secrets.CF_USERNAME }}
-        CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
+        CF_API_URL: ${{ api.sys.evans.pal.pivotal.io }}
+        CF_ORG: ${{ ptalla1.ford.com }}
+        CF_SPACE: ${{ sandbox }}
+        CF_USERNAME: ${{ ptalla1@ford.com }}
+        CF_PASSWORD: ${{ kdj6hcqc }}
